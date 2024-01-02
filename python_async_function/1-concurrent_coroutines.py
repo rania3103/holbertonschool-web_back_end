@@ -22,7 +22,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     (float values). The list of the delays should
     be in ascending order without using sort()
     because of concurrency."""
-    l = []
+    l: list = []
     for i in range(n):
         delay = wait_random(max_delay)
         l.append(delay)
