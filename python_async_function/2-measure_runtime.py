@@ -7,7 +7,6 @@ wait_random n times with the specified max_delay."""
 import random
 import asyncio
 from typing import List
-import time
 
 
 async def wait_random(max_delay: int = 10) -> float:
@@ -38,8 +37,3 @@ def measure_time(n: int, max_delay: int) -> float:
     should return a float."""
     delays = asyncio.run(wait_n(n, max_delay))
     return sum(delays) / n
-    """start_time = time.time()
-    asyncio.run(wait_n(n, max_delay))
-    end_time = time.time()
-    tot_time = end_time - start_time
-    return tot_time / n"""
