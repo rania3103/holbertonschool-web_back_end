@@ -4,7 +4,7 @@ task and then write a coroutine called
 async_comprehension that takes no arguments."""
 import asyncio
 import random
-from typing import Generator
+from typing import Generator, List
 
 
 async def async_generator() -> Generator[float, None, None]:
@@ -17,7 +17,7 @@ async def async_generator() -> Generator[float, None, None]:
         yield random_numb
 
 
-async def async_comprehension():
+async def async_comprehension() -> List[float]:
     """The coroutine will collect 10 random
     numbers using an async comprehensing
     over async_generator, then return
