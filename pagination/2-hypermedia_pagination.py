@@ -39,9 +39,9 @@ class Server:
         """takes the same arguments (and defaults) as get_page
         and returns a dictionary"""
         totalpages = math.ceil(len(self.dataset()) / page_size)
-        if page > totalpages:
+        if page >= totalpages:
             next = None
-            prev = None 
+            prev = None
         else:
             next = page + 1
             prev = page - 1
