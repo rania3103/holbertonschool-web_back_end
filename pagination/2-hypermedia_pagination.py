@@ -50,5 +50,5 @@ class Server:
             "page": page,
             "data": data,
             "next_page": next,
-            "prev,_page": prev,
+            "prev_page": prev,
             "total_pages": totalpages}
