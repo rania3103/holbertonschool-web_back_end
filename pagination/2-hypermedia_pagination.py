@@ -42,15 +42,15 @@ class Server:
         if page >= totalpages:
             nextp = None
         elif page == 1:
-            prev = None
+            prevp = None
         else:
             nextp = page + 1
-            prev = page - 1
+            prevp = page - 1
         data = self.get_page(page, page_size)
         return {
             "page_size": len(data),
             "page": page,
             "data": data,
             "next_page": nextp,
-            "prev_page": prev,
+            "prev_page": prevp,
             "total_pages": totalpages}
