@@ -40,7 +40,8 @@ class Server:
         and returns a dictionary"""
         totalpages = math.ceil(len(self.dataset()) / page_size)
         if page > totalpages:
-            next, prev = None, None
+            next = None
+            prev = None 
         else:
             next = page + 1
             prev = page - 1
