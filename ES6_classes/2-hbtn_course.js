@@ -1,5 +1,8 @@
 export default class HolbertonCourse {
   constructor(name, length, students) {
+    if (typeof name !== 'string' || typeof length !== 'number' || !Array.isArray(students)) {
+      throw TypeError('error in types of attributes');
+    }
     this._name = name;
     this._length = length;
     this._students = students;
