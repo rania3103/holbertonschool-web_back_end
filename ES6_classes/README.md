@@ -1,0 +1,1 @@
+Classes in ES6 provide a cleaner and more readable syntax for working with objects and inheritance in JavaScript compared to the traditional prototype-based approach.
