@@ -1,0 +1,1 @@
+Promises make asynchronous code more readable and manageable by providing a standardized way to handle success and failure. They improve code organization and make it easier to reason about asynchronous workflows.
