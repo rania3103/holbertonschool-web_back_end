@@ -1,0 +1,1 @@
+ ES6 is a powerful tool for concise and expressive data manipulation in JavaScript.
